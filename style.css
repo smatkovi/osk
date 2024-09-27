@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.key[data-key="32"] {
+    width: 300px; /* Spacebar */
+}
+
+.key[data-key="8"],
+.key[data-key="9"],
+.key[data-key="20"],
+.key[data-key="13"],
+.key[data-key="16"],
+.key[data-key="17"],
+.key[data-key="18"],
+.key[data-key="225"],
+.key[data-key="91"],
+.key[data-key="92"] {
+    width: 100px; /* Special wide keys */
+}
+
+.key[data-key="37"], /* Arrow keys */
+.key[data-key="38"],
+.key[data-key="39"],
+.key[data-key="40"] {
+    width: 50px;
+}
+
+.key.pressed {
+    background-color: #90ee90; /* Light green when pressed */
+}
+
