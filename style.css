@@ -36,12 +36,14 @@ body {
 }
 
 .key[data-key="32"] {
-    width: 300px; /* Spacebar */
+    width: 500px; /* Spacebar */
 }
 
 .key[data-key="8"],
 .key[data-key="9"],
-.key[data-key="20"],
+.key[data-key="20"] {
+    width: 100px; /* Special wide keys */
+}
 .key[data-key="13"],
 .key[data-key="16"],
 .key[data-key="17"],
@@ -49,7 +51,7 @@ body {
 .key[data-key="225"],
 .key[data-key="91"],
 .key[data-key="92"] {
-    width: 100px; /* Special wide keys */
+    width: 50px; /* Special wide keys */
 }
 
 .key[data-key="37"], /* Arrow keys */
